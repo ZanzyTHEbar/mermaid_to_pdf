@@ -1,0 +1,76 @@
+/* Mermaid diagram styling - More aggressive scaling */
+.mermaid {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 400px !important;
+  margin: 40px 0 !important;
+  transform: scale(2.5) !important;
+  transform-origin: top left !important;
+  overflow: visible !important;
+}
+
+/* Target SVG elements specifically */
+.mermaid svg {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 400px !important;
+  max-width: none !important;
+  transform: scale(2.5) !important;
+  transform-origin: top left !important;
+  margin-bottom: 200px !important;
+  display: block !important;
+}
+
+/* Ensure text and elements are readable */
+.mermaid svg text {
+  font-size: 14px !important;
+  font-family: Arial, sans-serif !important;
+}
+
+.mermaid svg .node rect,
+.mermaid svg .node circle,
+.mermaid svg .node ellipse,
+.mermaid svg .node polygon {
+  stroke-width: 2px !important;
+}
+
+/* General page styling for better PDF output */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 40px;
+  zoom: 1 !important;
+}
+
+/* Print-specific styles with even more aggressive scaling */
+@media print {
+  .mermaid {
+    display: block !important;
+    page-break-inside: avoid !important;
+    transform: scale(3) !important;
+    margin: 60px 0 !important;
+    min-height: 500px !important;
+  }
+
+  .mermaid svg {
+    transform: scale(3) !important;
+    margin-bottom: 300px !important;
+    min-height: 500px !important;
+  }
+
+  body {
+    zoom: 1 !important;
+  }
+}
+
+/* Specific fixes for different mermaid diagram types */
+.mermaid[data-processed="true"] {
+  transform: scale(2.5) !important;
+}
+
+/* Force visibility and proper rendering */
+.mermaid * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}

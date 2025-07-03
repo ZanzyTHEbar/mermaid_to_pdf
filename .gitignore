@@ -1,0 +1,6 @@
+pdf/
+html/
+pandoc/
+node_modules/
+.vscode/
+mermaid-filter.err

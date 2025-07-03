@@ -1,0 +1,17 @@
+{
+    "theme": "default",
+    "themeVariables": {
+        "fontSize": "32px",
+        "fontFamily": "Arial, sans-serif",
+        "nodeTextSize": "32px",
+        "edgeLabelBackground": "#fff",
+        "clusterBkg": "#fff",
+        "clusterBorder": "#888",
+        "nodeBorder": "#333",
+        "nodeBorderWidth": "3px",
+        "nodePadding": 30,
+        "nodeSpacing": 60,
+        "rankSpacing": 80,
+        "labelBoxPadding": 10
+    }
+}
